@@ -31,7 +31,7 @@ public class FirstActivity extends AppCompatActivity {
 
     @Override
     protected void onRestoreInstanceState(Bundle savedInstanceState) {
-        super.onSaveInstanceState(savedInstanceState);
+        super.onRestoreInstanceState(savedInstanceState);
         Log.wtf(LOG_TAG, "onRestoreInstanceState");
     }
 

@@ -48,7 +48,7 @@ public class SecondActivity extends AppCompatActivity implements View.OnClickLis
     //Restore image after device rotation
     @Override
     protected void onRestoreInstanceState(Bundle savedInstanceState) {
-        super.onSaveInstanceState(savedInstanceState);
+        super.onRestoreInstanceState(savedInstanceState);
         String imageUri = savedInstanceState.getString("imageUri", null);
         if (imageUri != null) {
             parseGalleryData(Uri.parse(imageUri));
